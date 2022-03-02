@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/voiceFragment"
+        android:title="Home"
+        android:icon="@drawable/home"
+        />
+    <item
+        android:id="@+id/userFragment"
+        android:icon="@drawable/profile"
+        android:title="User Profile"
+        />
+
+    <item android:id="@+id/controls" android:title="Controls">
+        <menu>
+            <item
+                android:id="@+id/autoFragment"
+                android:icon="@drawable/auto"
+                android:title="Auto Control"
+                />
+            <item
+                android:id="@+id/manualFragment"
+                android:icon="@drawable/ic_pan_tool_black_48dp"
+                android:title="Manual Control"
+                />
+        </menu>
+    </item>
+
+</menu>

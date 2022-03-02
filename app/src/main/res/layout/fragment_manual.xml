@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center|top"
+    tools:context=".manualFragment">
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/mt"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bulb"
+            android:textColor="@color/w"
+            app:layout_constraintEnd_toStartOf="@+id/bulb"
+            app:layout_constraintTop_toTopOf="@+id/bulb" />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+
+
+        <ImageView
+            android:id="@+id/bulb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/relay1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_wb_incandescent_white_24dp" />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+
+        <Button
+            android:id="@+id/relay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFF"
+            app:layout_constraintEnd_toStartOf="@+id/fan"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+       android:layout_width="wrap_content"
+       android:gravity="center"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="@dimen/mt">
+       <TextView
+           android:id="@+id/textView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Fan"
+           android:textColor="@color/w"
+           app:layout_constraintBaseline_toBaselineOf="@+id/relay1"
+           app:layout_constraintStart_toEndOf="@+id/relay1" />
+
+       <androidx.legacy.widget.Space
+           android:layout_width="10dp"
+           android:layout_height="10dp"/>
+
+       <ImageView
+           android:id="@+id/fan"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintEnd_toStartOf="@+id/relay2"
+           app:layout_constraintTop_toTopOf="parent"
+           app:srcCompat="@drawable/ic_toys_white_24dp" />
+
+       <androidx.legacy.widget.Space
+           android:layout_width="10dp"
+           android:layout_height="10dp"/>
+
+       <Button
+           android:id="@+id/relay2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="OFF"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+   </LinearLayout>
+
+</LinearLayout>
